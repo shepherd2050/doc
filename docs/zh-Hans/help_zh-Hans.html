@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>析真 - 帮助文档</title>
+    <style>
+        :root {
+            --text-color: #1a1a1a;
+            --text-secondary: #666666;
+            --bg-color: #ffffff;
+            --accent-color: #007aff;
+            --border-color: #e5e5ea;
+            --code-bg: #f5f5f7;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #f5f5f7;
+                --text-secondary: #a1a1a6;
+                --bg-color: #1c1c1e;
+                --accent-color: #0a84ff;
+                --border-color: #38383a;
+                --code-bg: #2c2c2e;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.7;
+            padding: 24px 20px 64px;
+            max-width: 720px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        ul, ol {
+            margin-bottom: 16px;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        li > ul, li > ol {
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        code {
+            font-family: "SF Mono", Menlo, monospace;
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        blockquote {
+            border-left: 3px solid var(--accent-color);
+            padding-left: 16px;
+            margin: 16px 0;
+            color: var(--text-secondary);
+        }
+
+        .highlight-box {
+            background-color: var(--code-bg);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 6px;
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 14px;
+            text-align: center;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>析真 · 帮助文档</h1>
+
+<h2>一、这个 App 是做什么的</h2>
+<p>析真，是一个让你把一件事持续想清楚的地方。通过结构化拆解、持续记录和修改，提升对事物的认知。</p>
+<p>我们每天都在琢磨事情：一个人靠不靠谱、一个项目风险在哪、一个决定该不该做、一个概念到底是什么意思。但大多数时候，这些琢磨是散的——想过就忘了，变了不知道为什么变，想清楚的东西留不住。</p>
+<p>析真的目的，是让琢磨有结构、有痕迹、能持续。</p>
+<p>它不替你判断，也不承诺给你答案。它帮你做四件事：</p>
+<ul>
+    <li><strong>拆开</strong>：用「总体」「角度」「分析点」把一个东西拆开，从多个面看它，而不是一团乱麻。</li>
+    <li><strong>留下</strong>：标出还没想清楚的地方，记下判断的变化，让想过的东西不白想。</li>
+    <li><strong>逼近</strong>：持续修改、保存版本，看见自己的认知怎么一路变过来，越来越接近真实。</li>
+    <li><strong>形成总体认知</strong>：把各个角度的判断合起来，形成对这个对象的整体看法，而不只是散落的点。</li>
+</ul>
+<p><strong>它适合这些用途：</strong></p>
+<ul>
+    <li>长期跟踪一件事，把它琢磨透。例如你正在学习一个科目、研究一个课题。</li>
+    <li>用模板快速分析一批同类对象。例如你要分析的同类对象较多，都要好好分析，这时记录下来，采用模板等就很方便。</li>
+    <li>看清自己所处环境里的众多人和事。例如你想定期分析自己周围的世界，不论抽象的还是现实的。</li>
+    <li>分析有过程、有时间线的事情。角度和分析点都可以作为时间段来组织；对象内的角度可以复制一份，成为一个新角度，分析点也可以复制。</li>
+</ul>
+<p><strong>它不是什么？</strong><br>不是笔记软件，不是日程管理，不是协作工具，不是知识库，也不是知识图谱。它只做一件事：承载你对事物的持续认知。</p>
+<div class="highlight-box">
+    <p><strong>一句话：</strong>本 App 是给需要持续琢磨的人，提供一个结构化分析工具。</p>
+</div>
+<p><strong>本 App 是单机应用，不支持多设备同步，不联网，不采集任何用户数据。</strong> 除了看帮助文档（标准的 HTML 浏览）、用户手动发起反馈邮件（用系统邮件 App，只采集设备型号、iOS 版本号、App 版本号、App 操作日志文件，日志文件不含任何用户内容）、看隐私政策和用户协议（用系统浏览器）之外。</p>
+
+<h2>二、什么是对象</h2>
+<p><strong>对象的结构</strong>：一个对象包括总体和多个角度。总体承载了对分析对象的主要认知。一个角度包括多个分析点。这样以总体—角度—分析点的三级结构，来记录我们的分析。</p>
+<p><strong>分析点</strong>是对具体的一个内容进行记录的地方。分析点包括摘要和正文。摘要让我们快速了解这个分析点的主题和结论。正文包括多个内容块。</p>
+<div class="highlight-box">
+    <p><strong>一句话：</strong>先建对象，再切角度，再填分析点；如果有总体观点，就在总体中填写。</p>
+</div>
+
+<h2>三、第一次用，建议这么走</h2>
+<ol>
+    <li>点底部中间的 <strong>+</strong>，建一个对象，随便起个名字。</li>
+    <li>进去后先别急着写，在「角度」那一排点 <strong>+</strong>，建两三个角度。</li>
+    <li>切到某个角度，在「分析点」那一排点 <strong>+</strong>，建分析点。</li>
+    <li>点进分析点，开始写。第一个块是摘要，写一句话概括；下面的正文里加你需要的块。</li>
+    <li>不用一次建全。边想边加，是正常用法。</li>
+</ol>
+
+<h2>四、怎么添加内容块</h2>
+<p>写分析点时，下方「添加」那一排是各种内容块：</p>
+<ul>
+    <li><strong>文本</strong>：最常用。点进去是全屏编辑器，可以加粗、下划线、颜色、链接、有序列表，也能插【结论】【规则】这类段内标记。</li>
+    <li><strong>图片</strong>：相册或拍照。</li>
+    <li><strong>表格</strong>：行列编辑，适合对比。</li>
+    <li><strong>录音</strong>：口述用。</li>
+    <li><strong>白板</strong>：手写，画草图。</li>
+</ul>
+<p><strong>内容块可以长按</strong>：上移、下移、加标题、加标注、删除。</p>
+<p><strong>内容块加标题</strong>：新建内容块时会出现标题行，输入即保留，不输入就消失。以后想加，从菜单添加。</p>
+<p><strong>标注</strong>：在认为比较特殊、值得注意的地方加入标记，分为文本标注和块标注。</p>
+<ul>
+    <li><strong>文本标注</strong>：位于富文本编辑框内部。</li>
+    <li><strong>块标注</strong>：添加到块显示的上方。</li>
+</ul>
+
+<h2>五、模板</h2>
+<p>经常重复的结构，存成模板。</p>
+<ul>
+    <li>分析点长按 →「另存为内容模板」。</li>
+    <li>对象菜单 →「另存为对象模板」。</li>
+    <li>下次新建时直接选对象模板或者内容模板。内容模板可以作为创建对象时的总体的模板。</li>
+</ul>
+<p><strong>模板的意义</strong>是让我们能全面分析，减少重复和减少遗漏。</p>
+<p>系统默认有部分系统模板（版本变化可能会更新），不可编辑，可另存为自己的模板。</p>
+
+<h2>六、方法</h2>
+<p><strong>方法的意义</strong>：填写对某类事物的分析方法、思考、注意事项等等。方法承载的是认知经验、认知方法。方法不是知识点，也不是具体的对象的观点。</p>
+<p>方法可以关联到对象、角度、分析点或总体上。</p>
+<ul>
+    <li>方法独立成库，只在方法库修改。</li>
+    <li>挂载点只能查看、引用、解除。</li>
+    <li>改一处，处处同步。</li>
+</ul>
+<p>系统默认有部分系统方法（版本变化可能会更新），不可编辑，可另存为自己的方法。</p>
+
+<h2>七、对象的版本和修改历史</h2>
+<p>重要节点手动保存一个版本，之后可以查看历史版本、恢复。</p>
+<p><strong>修改历史</strong>：可以大致看到内容变化过程。</p>
+<p>这两者让我们可以回头看到自己对事物的认知变化，什么时间作出了改变。</p>
+
+<h2>八、分类</h2>
+<p>对象多了以后，用左侧「分类」按钮建分类。</p>
+<ul>
+    <li>支持多级。</li>
+    <li>长按分类可以改名、移动、删除。</li>
+    <li>删除分类时会问你：把里面的对象移到根目录，还是一起删。</li>
+</ul>
+
+<h2>九、回收站</h2>
+<p>对象、模板和方法，都支持删除后进入回收站。</p>
+<p>可以从回收站中恢复。回收站内的对象、模板和方法，会被定期清除（默认 30 天）。</p>
+
+<h2>十、辅助功能</h2>
+<h3>导出对象</h3>
+<ul>
+    <li>列表长按或多选 →「导出」。</li>
+    <li>敏感内容建议加密导出。</li>
+</ul>
+<h3>整体备份恢复</h3>
+<ul>
+    <li>设置 → 数据备份。</li>
+    <li>包含全部数据，恢复时覆盖当前设备。</li>
+    <li>可以在更换手机前备份，拷贝到手机之外；新手机安装好后，用备份的数据恢复。</li>
+</ul>
+<h3>安全设置</h3>
+<ul>
+    <li>设置 → 安全设置。</li>
+    <li>开启后，数据在设备上是密文。</li>
+    <li>一个文字密码，派生密钥，解密数据。</li>
+    <li>开启时会给一串恢复密钥。请抄在纸上，离线保存。忘记密码时，它是唯一出路。</li>
+    <li>开启后，启动应用或者从后台返回，需要输入密码。</li>
+</ul>
+
+<h2>十一、几条实际建议</h2>
+<ul>
+    <li>先建对象再想结构，不要一开始纠结角度怎么分。</li>
+    <li>摘要一句话就够，正文里再展开。</li>
+    <li>重复的结构存模板，比每次重搭快。</li>
+    <li>重要节点存版本，改坏了能回。</li>
+    <li>恢复密钥抄纸上，别放备忘录、别截图。</li>
+    <li>定期导出完整备份，存到电脑或网盘。</li>
+    <li>存疑标出来，它会提醒你哪里还没想清楚。</li>
+</ul>
+
+<h2>十二、有问题看帮助，请反馈</h2>
+<ul>
+    <li>设置 → 帮助（就是这页）。</li>
+    <li>设置 → 反馈，可以附图片、文件、日志，通过系统邮箱发送。</li>
+    <li>这里我们会采集基础信息辅助定位问题：设备型号、系统版本、App 版本、操作日志附件。你也可以手动添加图片、系统崩溃日志文件等。<strong>我们不会读取任何用户的内容数据。</strong></li>
+</ul>
+<p><strong>常见问题：</strong></p>
+<ul>
+    <li>忘记密码：用恢复密钥恢复。恢复密钥丢失且忘记密码，数据永久无法恢复。</li>
+    <li>导出的文件选“不加密”：任何拿到文件的人都能读。</li>
+    <li>系统模板只读：想改就「复制为」自己的。</li>
+</ul>
+
+<h2>十三、联系我们</h2>
+<p>有任何建议、意见和问题，你都可以通过设置里的「反馈」联系我们。</p>
+<p>开发者邮箱：<a href="mailto:18908353575@163.com">18908353575@163.com</a></p>
+
+<div class="footer">
+    <p>析真 · 结构化分析工具</p>
+    <p>本应用不采集任何信息，不联网，无服务器，不同步。</p>
+</div>
+
+</body>
+</html>
