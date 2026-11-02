@@ -1,306 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xizhen - Help</title>
-    <style>
-        :root {
-            --text-color: #1a1a1a;
-            --text-secondary: #666666;
-            --bg-color: #ffffff;
-            --accent-color: #007aff;
-            --border-color: #e5e5ea;
-            --code-bg: #f5f5f7;
-            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --text-color: #f5f5f7;
-                --text-secondary: #a1a1a6;
-                --bg-color: #1c1c1e;
-                --accent-color: #0a84ff;
-                --border-color: #38383a;
-                --code-bg: #2c2c2e;
-            }
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-family);
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            line-height: 1.7;
-            padding: 24px 20px 64px;
-            max-width: 720px;
-            margin: 0 auto;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-
-        h2 {
-            font-size: 22px;
-            font-weight: 600;
-            margin-top: 48px;
-            margin-bottom: 16px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        h3 {
-            font-size: 17px;
-            font-weight: 600;
-            margin-top: 24px;
-            margin-bottom: 8px;
-        }
-
-        p {
-            margin-bottom: 16px;
-            font-size: 16px;
-        }
-
-        ul, ol {
-            margin-bottom: 16px;
-            padding-left: 24px;
-        }
-
-        li {
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-
-        li > ul, li > ol {
-            margin-top: 8px;
-            margin-bottom: 0;
-        }
-
-        strong {
-            font-weight: 600;
-        }
-
-        code {
-            font-family: "SF Mono", Menlo, monospace;
-            background-color: var(--code-bg);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        blockquote {
-            border-left: 3px solid var(--accent-color);
-            padding-left: 16px;
-            margin: 16px 0;
-            color: var(--text-secondary);
-        }
-
-        .highlight-box {
-            background-color: var(--code-bg);
-            border-radius: 10px;
-            padding: 16px 20px;
-            margin: 16px 0;
-        }
-
-        .highlight-box p {
-            margin-bottom: 8px;
-        }
-
-        .highlight-box p:last-child {
-            margin-bottom: 0;
-        }
-
-        .tag {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: #fff;
-            font-size: 12px;
-            font-weight: 600;
-            padding: 2px 8px;
-            border-radius: 4px;
-            margin-right: 6px;
-        }
-
-        .footer {
-            margin-top: 64px;
-            padding-top: 24px;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-secondary);
-            font-size: 14px;
-            text-align: center;
-        }
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    body {background-color: #151517}
+    p.p3 {margin: 0.0px 0.0px 16.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5}
+    p.p5 {margin: 0.0px 0.0px 16.0px 0.0px; font: 16.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5}
+    p.p8 {margin: 0.0px 0.0px 16.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #106bff; -webkit-text-stroke: #106bff}
+    p.p9 {margin: 0.0px 0.0px 16.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #909095; -webkit-text-stroke: #909095}
+    li.li4 {margin: 0.0px 0.0px 8.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 16.0px '.SF NS'; -webkit-text-stroke: 0px #000000}
+    span.s3 {font: 16.0px '.SF NS'; font-kerning: none}
+    span.s4 {-webkit-text-stroke: 0px #000000}
+    span.s5 {font: 16.0px '.SF NS'; font-kerning: none; background-color: #212123}
+    span.s6 {font-kerning: none; background-color: #212123}
+    span.s7 {font-kerning: none; color: #f2f2f5; -webkit-text-stroke: 0px #f2f2f5}
+    span.s8 {font-kerning: none; color: #106bff; -webkit-text-stroke: 0px #106bff}
+    ol.ol1 {list-style-type: decimal}
+    ul.ul1 {list-style-type: disc}
+  </style>
 </head>
 <body>
-
-<h1>Xizhen · Help</h1>
-
-<h2>1. What Is This App For</h2>
-<p>Xizhen is a place to help you think one thing through, continuously. Through structured breakdown, ongoing recording and revision, it improves your understanding of things.</p>
-<p>Every day we think about things: whether someone is reliable, where a project's risks lie, whether a decision should be made, what a concept really means. But most of the time, these thoughts are scattered — once thought, they're forgotten; when they change, we don't know why; what we've figured out can't be kept.</p>
-<p>Xizhen's purpose is to give your thinking structure, a trace, and continuity.</p>
-<p>It doesn't judge for you, and it doesn't promise you answers. It helps you do four things:</p>
-<ul>
-    <li><strong>Break it down</strong>: Use "Overall," "Perspectives," and "Analysis Points" to break something apart and look at it from multiple angles, instead of facing a tangled mess.</li>
-    <li><strong>Keep it</strong>: Mark what you haven't figured out yet, record how your judgments change, so that what you've thought isn't wasted.</li>
-    <li><strong>Approach</strong>: Keep revising and saving versions, and see how your understanding has evolved along the way — getting closer and closer to reality.</li>
-    <li><strong>Form an overall understanding</strong>: Combine judgments from different perspectives into an overall view of the object, rather than scattered points.</li>
+<h1 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>Xizhen · Help</b></span></h1>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>1. What Is This App For</b></span></h2>
+<p class="p3"><span class="s1">SeekEssen is a place to help you think one thing through, continuously. Through structured breakdown, ongoing recording and revision, it improves your understanding of things.</span></p>
+<p class="p3"><span class="s1">Every day we think about things: whether someone is reliable, where a project's risks lie, whether a decision should be made, what a concept really means. But most of the time, these thoughts are scattered — once thought, they're forgotten; when they change, we don't know why; what we've figured out can't be kept.</span></p>
+<p class="p3"><span class="s1">SeekEssen's purpose is to give your thinking structure, a trace, and continuity.</span></p>
+<p class="p3"><span class="s1">It doesn't judge for you, and it doesn't promise you answers. It helps you do four things:</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Break it down</b></span><span class="s1">: Use "Overall," "Perspectives," and "Analysis Points" to break something apart and look at it from multiple angles, instead of facing a tangled mess.</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Keep it</b></span><span class="s1">: Mark what you haven't figured out yet, record how your judgments change, so that what you've thought isn't wasted.</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Approach</b></span><span class="s1">: Keep revising and saving versions, and see how your understanding has evolved along the way — getting closer and closer to reality.</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Form an overall understanding</b></span><span class="s1">: Combine judgments from different perspectives into an overall view of the object, rather than scattered points.</span></li>
 </ul>
-<p><strong>It's suited to these uses:</strong></p>
-<ul>
-    <li>Tracking one thing over the long term and thinking it through. For example, a subject you're studying or a topic you're researching.</li>
-    <li>Quickly analyzing a batch of similar objects using templates. For example, when you have many similar objects to analyze thoroughly, recording them and using templates makes it much easier.</li>
-    <li>Seeing the many people and things in your environment more clearly. For example, if you want to regularly analyze the world around you, whether abstract or concrete.</li>
-    <li>Analyzing things that have a process and a timeline. Perspectives and analysis points can both be organized as time periods; a perspective within an object can be duplicated to become a new perspective, and analysis points can be duplicated too.</li>
+<p class="p5"><span class="s1"><b>It's suited to these uses:</b><b></b></span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Tracking one thing over the long term and thinking it through. For example, a subject you're studying or a topic you're researching.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Quickly analyzing a batch of similar objects using templates. For example, when you have many similar objects to analyze thoroughly, recording them and using templates makes it much easier.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Seeing the many people and things in your environment more clearly. For example, if you want to regularly analyze the world around you, whether abstract or concrete.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Analyzing things that have a process and a timeline. Perspectives and analysis points can both be organized as time periods; a perspective within an object can be duplicated to become a new perspective, and analysis points can be duplicated too.</span></li>
 </ul>
-<p><strong>What it is not:</strong><br>Not a note-taking app, not a task manager, not a collaboration tool, not a knowledge base, and not a knowledge graph. It does one thing: it carries your ongoing understanding of things.</p>
-<div class="highlight-box">
-    <p><strong>In one sentence:</strong> This app gives people who need to keep thinking things through a structured analysis tool.</p>
-</div>
-<p><strong>This app is a standalone, offline application. It does not support multi-device sync, does not connect to the internet, and does not collect any user data</strong> — except when viewing the help documentation (standard HTML browsing), when the user manually initiates a feedback email (using the system email app, which only collects device model, iOS version, app version, and app operation log files; log files contain no user content), and when viewing the privacy policy and user agreement (using the system browser).</p>
-
-<h2>2. What Is an Object</h2>
-<p><strong>Object structure</strong>: An object consists of an Overall section and multiple Perspectives. The Overall section carries the main understanding of the object being analyzed. A Perspective contains multiple Analysis Points. This three-level structure — Overall → Perspective → Analysis Point — is how we record our analysis.</p>
-<p><strong>An Analysis Point</strong> is where you record a specific piece of content. It consists of a Summary and a Body. The Summary lets you quickly grasp the topic and conclusion of the analysis point. The Body contains multiple content blocks.</p>
-<div class="highlight-box">
-    <p><strong>In one sentence:</strong> Create an object first, then add perspectives, then fill in analysis points; if you have an overall view, write it in the Overall section.</p>
-</div>
-
-<h2>3. Suggested First Steps</h2>
-<ol>
-    <li>Tap the <strong>+</strong> at the bottom center to create an object. Give it any name.</li>
-    <li>Don't rush to write yet. Tap <strong>+</strong> in the "Perspectives" row to add two or three perspectives.</li>
-    <li>Switch to a perspective, and tap <strong>+</strong> in the "Analysis Points" row to create an analysis point.</li>
-    <li>Tap into the analysis point and start writing. The first block is the Summary — write a one-sentence overview; then add the blocks you need in the Body below.</li>
-    <li>You don't need to build everything at once. Adding as you think is the normal way to use it.</li>
+<p class="p3"><span class="s3"><b>What it is not:</b></span><span class="s1"><br>
+Not a note-taking app, not a task manager, not a collaboration tool, not a knowledge base, and not a knowledge graph. It does one thing: it carries your ongoing understanding of things.</span></p>
+<p class="p6"><span class="s5"><b>In one sentence:</b></span><span class="s6"> This app gives people who need to keep thinking things through a structured analysis tool.</span></p>
+<p class="p3"><span class="s3"><b>This app is a standalone, offline application. It does not support multi-device sync, does not connect to the internet, and does not collect any user data</b></span><span class="s1"> — except when viewing the help documentation (standard HTML browsing), when the user manually initiates a feedback email (using the system email app, which only collects device model, iOS version, app version, and app operation log files; log files contain no user content), and when viewing the privacy policy and user agreement (using the system browser).</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>2. What Is an Object</b></span></h2>
+<p class="p3"><span class="s3"><b>Object structure</b></span><span class="s1">: An object consists of an Overall section and multiple Perspectives. The Overall section carries the main understanding of the object being analyzed. A Perspective contains multiple Analysis Points. This three-level structure — Overall → Perspective → Analysis Point — is how we record our analysis.</span></p>
+<p class="p3"><span class="s3"><b>An Analysis Point</b></span><span class="s1"> is where you record a specific piece of content. It consists of a Summary and a Body. The Summary lets you quickly grasp the topic and conclusion of the analysis point. The Body contains multiple content blocks.</span></p>
+<p class="p6"><span class="s5"><b>In one sentence:</b></span><span class="s6"> Create an object first, then add perspectives, then fill in analysis points; if you have an overall view, write it in the Overall section.</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>3. Suggested First Steps</b></span></h2>
+<ol class="ol1">
+  <li class="li4"><span class="s4"></span><span class="s1">Tap the </span><span class="s3"><b>+</b></span><span class="s1"> at the bottom center to create an object. Give it any name.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Don't rush to write yet. Tap </span><span class="s3"><b>+</b></span><span class="s1"> in the "Perspectives" row to add two or three perspectives.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Switch to a perspective, and tap </span><span class="s3"><b>+</b></span><span class="s1"> in the "Analysis Points" row to create an analysis point.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Tap into the analysis point and start writing. The first block is the Summary — write a one-sentence overview; then add the blocks you need in the Body below.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">You don't need to build everything at once. Adding as you think is the normal way to use it.</span></li>
 </ol>
-
-<h2>4. How to Add Content Blocks</h2>
-<p>When writing an analysis point, the "Add" row at the bottom offers various content blocks:</p>
-<ul>
-    <li><strong>Text</strong>: The most common. Tapping it opens a full-screen editor where you can bold, underline, color, link, add ordered lists, and insert inline markers like [Conclusion] and [Rule].</li>
-    <li><strong>Image</strong>: From your photo library or camera.</li>
-    <li><strong>Table</strong>: Row and column editing, good for comparisons.</li>
-    <li><strong>Audio</strong>: For voice notes.</li>
-    <li><strong>Whiteboard</strong>: Handwriting, for sketching.</li>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>4. How to Add Content Blocks</b></span></h2>
+<p class="p3"><span class="s1">When writing an analysis point, the "Add" row at the bottom offers various content blocks:</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Text</b></span><span class="s1">: The most common. Tapping it opens a full-screen editor where you can bold, underline, color, link, add ordered lists, and insert inline markers like [Conclusion] and [Rule].</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Image</b></span><span class="s1">: From your photo library or camera.</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Table</b></span><span class="s1">: Row and column editing, good for comparisons.</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Audio</b></span><span class="s1">: For voice notes.</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Whiteboard</b></span><span class="s1">: Handwriting, for sketching.</span></li>
 </ul>
-<p><strong>Long-press a content block</strong> to: move up, move down, add a title, add an annotation, or delete.</p>
-<p><strong>Adding a title to a content block</strong>: When you create a new content block, a title row appears. If you type something, it's kept; if you don't, it disappears. To add one later, use the menu.</p>
-<p><strong>Annotations</strong>: Add marks to places you consider special or noteworthy. There are two kinds: text annotations and block annotations.</p>
-<ul>
-    <li><strong>Text annotations</strong>: Located inside the rich-text editor.</li>
-    <li><strong>Block annotations</strong>: Displayed above the block.</li>
+<p class="p3"><span class="s3"><b>Long-press a content block</b></span><span class="s1"> to: move up, move down, add a title, add an annotation, or delete.</span></p>
+<p class="p3"><span class="s3"><b>Adding a title to a content block</b></span><span class="s1">: When you create a new content block, a title row appears. If you type something, it's kept; if you don't, it disappears. To add one later, use the menu.</span></p>
+<p class="p3"><span class="s3"><b>Annotations</b></span><span class="s1">: Add marks to places you consider special or noteworthy. There are two kinds: text annotations and block annotations.</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Text annotations</b></span><span class="s1">: Located inside the rich-text editor.</span></li>
+  <li class="li4"><span class="s2"><b></b></span><span class="s3"><b>Block annotations</b></span><span class="s1">: Displayed above the block.</span></li>
 </ul>
-
-<h2>5. Templates</h2>
-<p>Save frequently repeated structures as templates.</p>
-<ul>
-    <li>Long-press an analysis point → "Save as Content Template."</li>
-    <li>Object menu → "Save as Object Template."</li>
-    <li>Next time you create something, choose an object template or content template directly. A content template can serve as the template for an object's Overall section.</li>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>5. Templates</b></span></h2>
+<p class="p3"><span class="s1">Save frequently repeated structures as templates.</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Long-press an analysis point → "Save as Content Template."</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Object menu → "Save as Object Template."</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Next time you create something, choose an object template or content template directly. A content template can serve as the template for an object's Overall section.</span></li>
 </ul>
-<p><strong>The point of templates</strong> is to help us analyze thoroughly, reducing repetition and omissions.</p>
-<p>Some system templates are provided by default (they may be updated between versions). They cannot be edited, but can be saved as your own templates.</p>
-
-<h2>6. Methods</h2>
-<p><strong>The point of methods</strong>: Write down analysis approaches, thoughts, and things to watch out for regarding a certain type of thing. Methods carry cognitive experience and cognitive approaches. They are not knowledge points, nor are they viewpoints about a specific object.</p>
-<p>A method can be linked to an object, a perspective, an analysis point, or the Overall section.</p>
-<ul>
-    <li>Methods live independently in a method library; they can only be modified there.</li>
-    <li>Linked locations can only view, reference, or unlink them.</li>
-    <li>Change it once, and it updates everywhere.</li>
+<p class="p3"><span class="s3"><b>The point of templates</b></span><span class="s1"> is to help us analyze thoroughly, reducing repetition and omissions.</span></p>
+<p class="p3"><span class="s1">Some system templates are provided by default (they may be updated between versions). They cannot be edited, but can be saved as your own templates.</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>6. Methods</b></span></h2>
+<p class="p3"><span class="s3"><b>The point of methods</b></span><span class="s1">: Write down analysis approaches, thoughts, and things to watch out for regarding a certain type of thing. Methods carry cognitive experience and cognitive approaches. They are not knowledge points, nor are they viewpoints about a specific object.</span></p>
+<p class="p3"><span class="s1">A method can be linked to an object, a perspective, an analysis point, or the Overall section.</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Methods live independently in a method library; they can only be modified there.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Linked locations can only view, reference, or unlink them.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Change it once, and it updates everywhere.</span></li>
 </ul>
-<p>Some system methods are provided by default (they may be updated between versions). They cannot be edited, but can be saved as your own methods.</p>
-
-<h2>7. Object Versions and Revision History</h2>
-<p>Manually save a version at important milestones. Afterwards, you can view historical versions and restore them.</p>
-<p><strong>Revision history</strong>: Gives a rough view of how the content has changed over time.</p>
-<p>Together, these let you look back and see how your understanding of things changed, and when you made those changes.</p>
-
-<h2>8. Categories</h2>
-<p>Once you have many objects, use the "Categories" button on the left to create categories.</p>
-<ul>
-    <li>Multiple levels are supported.</li>
-    <li>Long-press a category to rename, move, or delete it.</li>
-    <li>When deleting a category, you'll be asked: move the objects inside to the root, or delete them together.</li>
+<p class="p3"><span class="s1">Some system methods are provided by default (they may be updated between versions). They cannot be edited, but can be saved as your own methods.</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>7. Object Versions and Revision History</b></span></h2>
+<p class="p3"><span class="s1">Manually save a version at important milestones. Afterwards, you can view historical versions and restore them.</span></p>
+<p class="p3"><span class="s3"><b>Revision history</b></span><span class="s1">: Gives a rough view of how the content has changed over time.</span></p>
+<p class="p3"><span class="s1">Together, these let you look back and see how your understanding of things changed, and when you made those changes.</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>8. Categories</b></span></h2>
+<p class="p3"><span class="s1">Once you have many objects, use the "Categories" button on the left to create categories.</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Multiple levels are supported.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Long-press a category to rename, move, or delete it.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">When deleting a category, you'll be asked: move the objects inside to the root, or delete them together.</span></li>
 </ul>
-
-<h2>9. Trash</h2>
-<p>Objects, templates, and methods all go to the Trash when deleted.</p>
-<p>You can restore them from the Trash. Items in the Trash are periodically cleared (30 days by default).</p>
-
-<h2>10. Auxiliary Features</h2>
-<h3>Exporting Objects</h3>
-<ul>
-    <li>Long-press or multi-select in the list → "Export."</li>
-    <li>For sensitive content, we recommend encrypted export.</li>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>9. Trash</b></span></h2>
+<p class="p3"><span class="s1">Objects, templates, and methods all go to the Trash when deleted.</span></p>
+<p class="p3"><span class="s1">You can restore them from the Trash. Items in the Trash are periodically cleared (30 days by default).</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>10. Auxiliary Features</b></span></h2>
+<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>Exporting Objects</b></span></h3>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Long-press or multi-select in the list → "Export."</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">For sensitive content, we recommend encrypted export.</span></li>
 </ul>
-<h3>Full Backup and Restore</h3>
-<ul>
-    <li>Settings → Data Backup.</li>
-    <li>Includes all data; restoring overwrites the current device.</li>
-    <li>You can back up before switching phones and copy the backup off the phone; after setting up the new phone, restore from the backup.</li>
+<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>Full Backup and Restore</b></span></h3>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Settings → Data Backup.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Includes all data; restoring overwrites the current device.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">You can back up before switching phones and copy the backup off the phone; after setting up the new phone, restore from the backup.</span></li>
 </ul>
-<h3>Security Settings</h3>
-<ul>
-    <li>Settings → Security Settings.</li>
-    <li>When enabled, data on the device is stored as ciphertext.</li>
-    <li>A single text password derives the key that decrypts the data.</li>
-    <li>When enabling, you'll be given a recovery key. Write it down on paper and keep it offline. If you forget your password, it is the only way back.</li>
-    <li>Once enabled, you'll need to enter the password when launching the app or returning from the background.</li>
+<h3 style="margin: 0.0px 0.0px 8.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>Security Settings</b></span></h3>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Settings → Security Settings.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">When enabled, data on the device is stored as ciphertext.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">A single text password derives the key that decrypts the data.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">When enabling, you'll be given a recovery key. Write it down on paper and keep it offline. If you forget your password, it is the only way back.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Once enabled, you'll need to enter the password when launching the app or returning from the background.</span></li>
 </ul>
-
-<h2>11. A Few Practical Tips</h2>
-<ul>
-    <li>Create the object before worrying about structure — don't overthink how to divide perspectives at the start.</li>
-    <li>One sentence for the summary is enough; expand in the body.</li>
-    <li>Save repeated structures as templates — faster than rebuilding each time.</li>
-    <li>Save versions at important milestones so you can roll back if something breaks.</li>
-    <li>Write the recovery key on paper — don't put it in a notes app, don't screenshot it.</li>
-    <li>Export a full backup regularly and store it on your computer or cloud drive.</li>
-    <li>Mark your doubts — the app will remind you where you haven't thought things through.</li>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>11. A Few Practical Tips</b></span></h2>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Create the object before worrying about structure — don't overthink how to divide perspectives at the start.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">One sentence for the summary is enough; expand in the body.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Save repeated structures as templates — faster than rebuilding each time.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Save versions at important milestones so you can roll back if something breaks.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Write the recovery key on paper — don't put it in a notes app, don't screenshot it.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Export a full backup regularly and store it on your computer or cloud drive.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Mark your doubts — the app will remind you where you haven't thought things through.</span></li>
 </ul>
-
-<h2>12. Need Help? Send Feedback</h2>
-<ul>
-    <li>Settings → Help (this page).</li>
-    <li>Settings → Feedback. You can attach images, files, and logs, sent via the system email app.</li>
-    <li>We collect basic information to help diagnose issues: device model, OS version, app version, and operation log attachments. You can also manually add images, system crash log files, etc. <strong>We do not read any of your content data.</strong></li>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>12. Need Help? Send Feedback</b></span></h2>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Settings → Help (this page).</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Settings → Feedback. You can attach images, files, and logs, sent via the system email app.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">We collect basic information to help diagnose issues: device model, OS version, app version, and operation log attachments. You can also manually add images, system crash log files, etc. </span><span class="s3"><b>We do not read any of your content data.</b><b></b></span></li>
 </ul>
-<p><strong>FAQ:</strong></p>
-<ul>
-    <li>Forgot your password: restore with the recovery key. If the recovery key is lost and the password is forgotten, the data cannot be recovered.</li>
-    <li>Exported files with "no encryption" selected: anyone who gets the file can read it.</li>
-    <li>System templates are read-only: to modify one, "Duplicate as" your own.</li>
+<p class="p5"><span class="s1"><b>FAQ:</b><b></b></span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">Forgot your password: restore with the recovery key. If the recovery key is lost and the password is forgotten, the data cannot be recovered.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">Exported files with "no encryption" selected: anyone who gets the file can read it.</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">System templates are read-only: to modify one, "Duplicate as" your own.</span></li>
 </ul>
-
-<h2>13. Contact Us</h2>
-<p>If you have any suggestions, comments, or questions, you can reach us via "Feedback" in Settings.</p>
-<p>Developer email: <a href="mailto:18908353575@163.com">18908353575@163.com</a></p>
-
-<div class="footer">
-    <p>Xizhen · Structured Analysis Tool</p>
-    <p>This app collects no information, does not connect to the internet, has no server, and does not sync.</p>
-</div>
-
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 22.0px '.SF NS'; color: #f2f2f5; -webkit-text-stroke: #f2f2f5"><span class="s1"><b>13. Contact Us</b></span></h2>
+<p class="p3"><span class="s1">If you have any suggestions, comments, or questions, you can reach us via "Feedback" in Settings.</span></p>
+<p class="p8"><span class="s7">Developer email: <a href="mailto:18908353575@163.com"><span class="s8">18908353575@163.com</span></a></span></p>
+<p class="p9"><span class="s1">SeekEssen · Structured Analysis Tool</span></p>
+<p class="p9"><span class="s1">This app collects no information, does not connect to the internet, has no server, and does not sync.</span></p>
 </body>
 </html>
